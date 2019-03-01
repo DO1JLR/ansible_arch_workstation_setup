@@ -1,11 +1,12 @@
 ---
-# flobal user config:
-user: l3d
+# global user config:
+user: lilian
 users:
-  l3d:
+  lilian:
     - l3d
+
 admins:
-  - l3d
+  - lilian
 
 
 # i3wm config:
@@ -65,7 +66,7 @@ i3_applications:
     on_startup: true
 
 i3_run_on_startup:
-  - nextcloud
+  - xrandr --output HDMI2 --mode 1920x1200 --auto --right-of DP1 --output DP1 --mode 2560x1440 --auto
   - sudo nm-applet
 
 

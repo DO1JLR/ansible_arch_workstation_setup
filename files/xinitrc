@@ -5,8 +5,9 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --auto
+# xrandr --setprovideroutputsource modesetting NVIDIA-0
+# xrandr --auto
+xrandr --output HDMI2 --mode 1920x1200 --auto --right-of DP1 --output DP1 --mode 2560x1440 --auto
 setxkbmap de
 
 # merge in defaults and keymaps
