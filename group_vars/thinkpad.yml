@@ -21,6 +21,8 @@ i3_packages_extra:
   - evince
   - libreoffice
   - speedtest-cli
+  - htop
+  - dunst
 
 i3_keybindings_extra:
   - keybinding:
