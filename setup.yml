@@ -53,6 +53,7 @@
   roles:
     - copy_files
     - i3wm
+    - ntp
 
 - name: install nextcloud-client
   hosts: thinkpad

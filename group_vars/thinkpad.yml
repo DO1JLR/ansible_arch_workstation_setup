@@ -23,6 +23,7 @@ i3_packages_extra:
   - speedtest-cli
   - htop
   - dunst
+  - keychain
 
 i3_keybindings_extra:
   - keybinding:
@@ -70,7 +71,7 @@ i3_applications:
 i3_run_on_startup:
   - xrandr --output HDMI2 --mode 1920x1200 --auto --right-of DP1 --output DP1 --mode 2560x1440 --auto
   - sudo nm-applet
-
+  - nextcloud
 
 i3:
   font_size: 11
@@ -120,4 +121,6 @@ addon_list:
   - name: multi-account-containers
     directory: "@testpilot-containers"
 
-
+# bash foo
+bash:
+  bashrc: "eval $(keychain --eval --quiet id_ed25519)"
