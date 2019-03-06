@@ -121,6 +121,3 @@ addon_list:
   - name: multi-account-containers
     directory: "@testpilot-containers"
 
-# bash foo
-bash:
-  bashrc: "eval $(keychain --eval --quiet id_ed25519)"
