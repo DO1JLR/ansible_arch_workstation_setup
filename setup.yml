@@ -63,5 +63,13 @@
   roles:
     - nextcloud
 
-
+- name: install some arch fonts
+  hosts: thinkpad
+  tags:
+  - arch
+  - font
+  - fonts
+  - schrift
+  roles:
+   - arch-fonts
 
