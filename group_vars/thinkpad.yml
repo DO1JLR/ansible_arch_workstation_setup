@@ -127,3 +127,5 @@ addon_list:
   - name: multi-account-containers
     directory: "@testpilot-containers"
 
+extra_bashrc: alias wingcon_vpn="sudo openvpn --config /home/lilian/.vpn/stark-TCP-443-lilian/stark-TCP-443-lilian.ovpn"
+

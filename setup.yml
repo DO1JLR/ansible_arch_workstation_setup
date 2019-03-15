@@ -23,6 +23,7 @@
   hosts: thinkpad
   tags: 
   - setup
+  - dotfiles
   roles:
     - dotfiles
 
