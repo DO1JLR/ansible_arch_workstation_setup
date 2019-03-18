@@ -8,7 +8,7 @@ users:
 admins:
   - lilian
 
-
+install_keychain: true
 # i3wm config:
 
 i3_packages_extra:
@@ -80,7 +80,7 @@ i3_run_on_startup:
   - nextcloud
 
 i3:
-  font_size: 11
+  font_size: 12
   focus_follows_mouse: true
 
 i3_desktop_env:
