@@ -103,6 +103,7 @@ i3lock_options: "i3lock --image=/home/{{ user }}/.config/lockscreen.png --color 
 
 
 # Firefox config
+firefox_path: "/home/{{ user }}/.mozilla/firefox"
 username: "{{ user }}"
 
 search_engines:
