@@ -65,3 +65,12 @@
   roles:
    - arch-fonts
 
+- name: install openvpn
+  hosts: thinkpad
+  tags:
+  - setup
+  - openvpn
+  roles:
+    - openvpn
+
+
