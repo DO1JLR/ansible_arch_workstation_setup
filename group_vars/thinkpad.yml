@@ -86,7 +86,7 @@ i3_applications:
     class: "Evolution"
     name: "evolution"
     workspace: 9
-    on_startup: true
+    on_startup: false
 
 
 i3_run_on_startup:

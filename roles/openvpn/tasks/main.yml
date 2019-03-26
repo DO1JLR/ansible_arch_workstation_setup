@@ -5,7 +5,7 @@
   pacman:
     update_cache: yes
     upgrade: yes
-  when: ansible_os_family = 'Archlinux'
+  when: ansible_os_family == 'Archlinux'
 
 - name: Install OpenVPN for ArchLinux
   become: yes
@@ -15,7 +15,7 @@
       - bridge-utils
       - easy-rsa
     state: present
-  when: ansible_os_family = 'Archlinux'
+  when: ansible_os_family == 'Archlinux'
 
 - name: Add the tun module
   become: yes
