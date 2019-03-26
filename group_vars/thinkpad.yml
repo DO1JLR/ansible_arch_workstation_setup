@@ -20,6 +20,8 @@ admins_ssh_root_prefix:
 
 ssh_public_key_store: 'admin_ssh_keys' 
 
+home_sweet_home: false
+
 install_keychain: true
 # i3wm config:
 
@@ -101,46 +103,5 @@ i3_desktop_env:
 
 i3lock_options: "i3lock --image=/home/{{ user }}/.config/lockscreen.png --color 000000"
 
-
-# Firefox config
-firefox_path: "/home/{{ user }}/.mozilla/firefox"
-username: "{{ user }}"
-
-search_engines:
-  - google
-  - duckduckgo
-  - invidious
-  - searx
-  - qwant
-
-addon_list:
-  - name: passff
-    directory: "passff@invicem.pro.xpi"    
-
-  - name: ublock-origin
-    directory: "uBlock0@raymondhill.net"
-
-  - name: umatrix
-    directory: "uMatrix@raymondhill.net"
-
-  - name: decentraleyes
-    directory: "jid1-BoFifL9Vbdl2zQ@jetpack"
-
-  - name: first-party-isolation
-    directory: "{33c93ccc-ceed-47d2-9645-805ea58c8a07}"
-
-  - name: neat-url
-    directory: "neaturl@hugsmile.eu"
-
-  - name: skip-redirect
-    directory: "skipredirect@sblask"
-
-  - name: temporary-containers
-    directory: "{c607c8df-14a7-4f28-894f-29e8722976af}"
-
-  - name: multi-account-containers
-    directory: "@testpilot-containers"
-
 extra_bashrc: alias wingcon_vpn="sudo openvpn --config /home/lilian/.vpn/stark-TCP-443-lilian/stark-TCP-443-lilian.ovpn"
 
-home_sweet_home: false

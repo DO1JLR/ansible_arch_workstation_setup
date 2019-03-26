@@ -25,6 +25,3 @@
 [submodule "roles/arch-fonts"]
 	path = roles/arch-fonts
 	url = https://github.com/DO1JLR/role-arch-fonts.git
-[submodule "roles/firefox"]
-	path = roles/firefox
-	url = https://github.com/maxbachmann-ansible/role-firefox.git

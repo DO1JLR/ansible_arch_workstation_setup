@@ -37,15 +37,6 @@
     - pulseaudio
     - networkmanager
 
-- name: improve firefox configuration
-  hosts: thinkpad
-  tags:
-  - setup
-  - firefox
-  roles:
-    - firefox
-
-
 - name: Install useful packages
   hosts: thinkpad
   tags: 
