@@ -1,14 +1,28 @@
 ---
 # global user config:
 user: lilian
+accounts: 
+  - lilian
 users:
   lilian:
-    - l3d
+    - l3d@pinkie.l3d.yt
+    - l3d@backup.l3d.yt
+    - l3d@backup.l3d.yt
+    - l3d@business.wingcon.com
+    - l3d@derpy.l3d.yt
+    - l3d@mobile.l3d.yt 
 
 admins:
   - lilian
 
+admins_ssh_root_prefix: 
+  - l3d
 
+ssh_public_key_store: 'admin_ssh_keys' 
+
+home_sweet_home: false
+
+install_keychain: true
 # i3wm config:
 
 i3_packages_extra:
@@ -24,6 +38,7 @@ i3_packages_extra:
   - htop
   - dunst
   - keychain
+  - python-pip
 
 i3_keybindings_extra:
   - keybinding:
@@ -71,7 +86,7 @@ i3_applications:
     class: "Evolution"
     name: "evolution"
     workspace: 9
-    on_startup: true
+    on_startup: false
 
 
 i3_run_on_startup:
@@ -80,52 +95,13 @@ i3_run_on_startup:
   - nextcloud
 
 i3:
-  font_size: 11
+  font_size: 12
   focus_follows_mouse: true
 
 i3_desktop_env:
   background: "/home/{{ user }}/.config/background.png"
 
 i3lock_options: "i3lock --image=/home/{{ user }}/.config/lockscreen.png --color 000000"
-
-
-# Firefox config
-username: "{{ user }}"
-
-search_engines:
-  - google
-  - duckduckgo
-  - invidious
-  - searx
-  - qwant
-
-addon_list:
-  - name: passff
-    directory: "passff@invicem.pro.xpi"    
-
-  - name: ublock-origin
-    directory: "uBlock0@raymondhill.net"
-
-  - name: umatrix
-    directory: "uMatrix@raymondhill.net"
-
-  - name: decentraleyes
-    directory: "jid1-BoFifL9Vbdl2zQ@jetpack"
-
-  - name: first-party-isolation
-    directory: "{33c93ccc-ceed-47d2-9645-805ea58c8a07}"
-
-  - name: neat-url
-    directory: "neaturl@hugsmile.eu"
-
-  - name: skip-redirect
-    directory: "skipredirect@sblask"
-
-  - name: temporary-containers
-    directory: "{c607c8df-14a7-4f28-894f-29e8722976af}"
-
-  - name: multi-account-containers
-    directory: "@testpilot-containers"
 
 extra_bashrc: alias wingcon_vpn="sudo openvpn --config /home/lilian/.vpn/stark-TCP-443-lilian/stark-TCP-443-lilian.ovpn"
 
