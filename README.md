@@ -1,6 +1,6 @@
  Ansible Thinkpad Setup
 ==========================
-My Ansible Setup for my Lenovo Thinkpad.
+My old Ansible Playbook for my Lenovo Thinkpad.
 
  What is this playbook good for:
 --------------------------------
@@ -8,14 +8,10 @@ My Ansible Setup for my Lenovo Thinkpad.
  + Create dotfiles like .bashrc and .vimrc
  + Setup and configure I3WM as Window Manager
 
- Install instructions:
+ WARNING:
 -----------------------
-```bash
-# Clone Git
-git clone https://github.com/DO1JLR/ansible_thinkpad_setup.git ansible_thinkpad_setup
-cd ansible_thinkpad_setup
+This playbook collection is a little bit outdated.
+Please have a look into [GitHub.com/DO1JLR/ansible_thinkpad_setup](https://github.com/DO1JLR/ansible_thinkpad_setup.git) for a more modern ansible playbook collection for different devices and use cases *(office, home, tower...)*
 
-# Download needed submodules
-git submodule update --init --recursive
-```
- 
+Thank you
+
